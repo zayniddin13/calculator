@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Inika:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="h-screen grid place-content-center">
+        <div class="container   max-w-md bg-black my-auto py-6 max-[500px]:px-6 px-16 rounded-md">
+            <div class="display h-[20vh] text-end text-white">
+                
+            </div>
+         <div class="calculator_body mb-0">
+           <form class="w-[80%] h-20 py-2.5 ml-auto mr-0">
+            <input type="number"
+            value=""
+            placeholder="0"
+           disabled
+            class="input bg-inherit text-white text-6xl font-light font-inter text-end w-full" >
+           </form>
+           <div class="cal_btn grid grid-cols-4 gap-3">
+            <button class="digit text-white text-2xl font-normal font-Inter bg-amber-500 rounded-full p-auto w-14 h-14" data-value="AC">AC</button>
+            <button class="pilus_minus text-white text-2xl font-normal font-Inter bg-amber-500 rounded-full p-auto w-14 h-14">+/-</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-amber-500 rounded-full p-auto w-14 h-14" data-value="/100*">%</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-amber-500 rounded-full p-auto w-14 h-14" data-value="/">/</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value="7">7</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value="8">8</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value="9">9</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-amber-500 rounded-full p-auto w-14 h-14" data-value="*">X</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value="4">4</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value="5">5</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value="6">6</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-amber-500 rounded-full p-auto w-14 h-14" data-value="-">-</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value="1">1</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value="2">2</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value="3">3</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-amber-500 rounded-full p-auto w-14 h-14" data-value="+">+</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto h-14  col-span-2" data-value="0">0</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-zinc-800 rounded-full p-auto w-14 h-14" data-value=".">.</button>
+            <button class="digit text-white text-2xl font-normal font-Inter bg-amber-500 rounded-full p-auto w-14 h-14" data-value="=">=</button>
+         </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
